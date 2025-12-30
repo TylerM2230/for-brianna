@@ -1,13 +1,35 @@
-# Responsive Portfolio Website Alexa
-## [Watch it on youtube](https://youtu.be/27JtRAI3QO8)
-### Responsive Portfolio Website Alexa
+# For Brianna
 
-- Responsive Personal Portfolio Website Using HTML CSS & JavaScript
-- Smooth scrolling in each section.
-- Includes a light and dark mode.
-- Developed first with the Mobile First methodology, then for desktop.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+A personal tribute website featuring isopsephy and gematria analysis of the name "Brianna Miranda."
 
-💙 Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/c/Bedimcode)
+## About
 
-![preview img](/preview.png)
+This site explores the etymology, numerical values, and archetypal meanings encoded within the name through ancient systems of letter-number correspondence:
+
+- **Greek Isopsephy** - Numerical values of Greek letter transliterations
+- **Hebrew Gematria** - Cross-references with Hebrew numerical equivalents
+- **English Gematria** - Simple ordinal values (A=1, B=2, etc.)
+
+## Features
+
+- Responsive design with mobile-first approach
+- Light/dark mode support
+- Smooth scroll animations powered by GSAP
+- Particle effects and interactive elements
+
+## Structure
+
+```
+├── index.html          # Main page
+├── assets/
+│   ├── css/
+│   │   └── styles.css  # All styles
+│   ├── js/
+│   │   └── main.js     # Animations and interactivity
+│   └── img/
+│       └── favicon.svg # Site icon
+```
+
+## License
+
+This project is a personal gift. Feel free to use the code structure as inspiration for your own projects.

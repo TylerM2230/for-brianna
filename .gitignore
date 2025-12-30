@@ -1,0 +1,5 @@
+# PDFs
+*.pdf
+
+# Claude Code settings
+.claude/
