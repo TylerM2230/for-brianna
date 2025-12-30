@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <!-- Gradient for the mystical background -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#352A4D"/>
+      <stop offset="100%" style="stop-color:#4A3B6B"/>
+    </linearGradient>
+    <!-- Gold accent gradient -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37"/>
+      <stop offset="100%" style="stop-color:#E8CC6A"/>
+    </linearGradient>
+    <!-- Rose gold gradient -->
+    <linearGradient id="roseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C9A087"/>
+      <stop offset="100%" style="stop-color:#E0C4B0"/>
+    </linearGradient>
+    <!-- Glow effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#bgGradient)" stroke="url(#goldGradient)" stroke-width="2"/>
+
+  <!-- Inner mystical eye / witness symbol -->
+  <ellipse cx="32" cy="32" rx="16" ry="10" fill="none" stroke="url(#roseGradient)" stroke-width="2" filter="url(#glow)"/>
+
+  <!-- Central iris / star -->
+  <circle cx="32" cy="32" r="6" fill="url(#goldGradient)" filter="url(#glow)"/>
+
+  <!-- Inner pupil -->
+  <circle cx="32" cy="32" r="3" fill="#352A4D"/>
+
+  <!-- Light reflection -->
+  <circle cx="34" cy="30" r="1.5" fill="#FAF8F5" opacity="0.8"/>
+
+  <!-- Top crown / summit rays (representing nobility/ascent) -->
+  <g stroke="url(#goldGradient)" stroke-width="1.5" stroke-linecap="round" filter="url(#glow)">
+    <!-- Central ray -->
+    <line x1="32" y1="8" x2="32" y2="14"/>
+    <!-- Left rays -->
+    <line x1="24" y1="10" x2="26" y2="15"/>
+    <line x1="17" y1="14" x2="21" y2="18"/>
+    <!-- Right rays -->
+    <line x1="40" y1="10" x2="38" y2="15"/>
+    <line x1="47" y1="14" x2="43" y2="18"/>
+  </g>
+
+  <!-- Bottom subtle smoke wisps (representing Ashan/420) -->
+  <g stroke="url(#roseGradient)" stroke-width="1" stroke-linecap="round" opacity="0.6">
+    <path d="M 24 50 Q 28 47 26 44" fill="none"/>
+    <path d="M 32 52 Q 34 48 32 45" fill="none"/>
+    <path d="M 40 50 Q 36 47 38 44" fill="none"/>
+  </g>
+
+  <!-- Decorative corner stars -->
+  <g fill="url(#goldGradient)" opacity="0.7">
+    <circle cx="12" cy="32" r="1.5"/>
+    <circle cx="52" cy="32" r="1.5"/>
+  </g>
+</svg>
